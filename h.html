@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Budget AI - Assistant Financier Intelligent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coach Budget AI</h1>
+        <p>Votre assistant financier intelligent qui analyse, conseille et optimise.</p>
+    </header>
+
+    <section id="dashboard">
+        <h2>Votre Tableau de Bord</h2>
+        <div id="summary">
+            <div class="card">
+                <h3>Revenus Mensuels</h3>
+                <p id="income">0 €</p>
+            </div>
+            <div class="card">
+                <h3>Dépenses Mensuelles</h3>
+                <p id="expenses">0 €</p>
+            </div>
+            <div class="card">
+                <h3>Épargne Possible</h3>
+                <p id="savings">0 €</p>
+            </div>
+        </div>
+
+        <h2>Ajouter une Transaction</h2>
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Description (ex. Supermarché)" required>
+            <input type="number" id="amount" placeholder="Montant (€)" step="0.01" required>
+            <select id="type">
+                <option value="income">Revenu</option>
+                <option value="expense">Dépense</option>
+            </select>
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <h2>Notifications Intelligentes</h2>
+        <div id="notifications"></div>
+    </section>
+
+    <section id="budget-coach">
+        <h2>Conseils de Votre Coach IA</h2>
+        <p id="coach-message">Ajoutez des transactions pour recevoir des conseils personnalisés !</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
